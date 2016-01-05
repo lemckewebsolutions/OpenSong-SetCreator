@@ -1,0 +1,10 @@
+{
+  "name": "OpenSong-SetCreator",
+  "description": "Library that can create set files for the OpenSong program.",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "OpenSongSetCreator\\": "src/"
+    }
+  }
+}
