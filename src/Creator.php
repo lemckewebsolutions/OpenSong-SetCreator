@@ -6,6 +6,11 @@ use OpenSongSetCreator\Collection\SlideGroupCollection;
 
 class Creator
 {
+    /**
+     * @param $setName
+     * @param SlideGroupCollection $slideGroupCollection
+     * @return string
+     */
     public function createSet($setName, SlideGroupCollection $slideGroupCollection)
     {
         $xml = new \SimpleXMLElement('<set/>');
@@ -36,6 +41,6 @@ class Creator
             }
         }
 
-        echo $xml->asXML();
+        return $xml->asXML();
     }
 }
